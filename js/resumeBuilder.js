@@ -13,7 +13,8 @@ var bio={
                     "linkedin":"http://lnked.in/3JBT6",
                     "location":"Fremont, CA"
                     },
-        "skill":["java","C++","MySQL"]
+        "skill":["HTML","CSS","JavaScript","Python","PostgreSQL","Git"],
+        "Frameworks":["Bootstrap","WordPress"]
         
          }
 bio.Display = function()
@@ -36,21 +37,26 @@ $("#topContacts").append(formattedlinkedin);
 $("#topContacts").append(formattedgithub);
 $("#topContacts").append(formattedlocation);
 $("#header").append(HTMLskillsStart);
+//$("#header").append(HTMLLanguages);
 
 for (skills in bio.skill)
     { 
          var formattedskills = HTMLskills.replace("%data%",bio.skill[skills]);
+
         $("#header").append(formattedskills);
      }
 
+//$("#header").append(HTMLFramework);
+
+for (Framework in bio.Frameworks)
+    {
+        var formattedFrameworks = HTMLFrameworks.replace("%data%",bio.Frameworks[Framework]);
+        $("#header").append(formattedFrameworks);   
+     } 
 
 $("#header").prepend(formattedbioPic);
 
 }
-
-
-
-
 
 var Projects = {
     "project":[
@@ -99,18 +105,18 @@ var education = {
             "Name": "Udacity",
             "Major": "Web Developement",
             "Minors": "DataBases",
-            "GradYear": "2014",
+            "GradYear": "2015",
             "location": "San Francisco",
             "onlineCourses":[
                 {
                 "title":"Full-Stack Web Developement Nanodegree",
                  "school":"udacity",
-                 "date":"feb 2015"
+                 "date":"Feb 2015"
                  },
                  {
                  "title":"JavaScripts",
                   "school":"Udacity",
-                  "date":"feb 2015"
+                  "date":"Feb 2015"
                  }
      
                 ]
@@ -171,8 +177,8 @@ var work = {
             "Employer":"Egnaro Ltd",
             "Title":"Full Stack Web developer",
             "location":"London",
-            "Date":"feb 2014",
-            "Description":"<li>Developed, designed and implemented a web application using Python and PostgreSQL for the Sales department to check inventory, create orders, manage appointments and keep customer’s order history.</li><li>Developed, designed and implemented a system for the Payroll departments to keep track of staff productivity, commissions and performances. </li><li>Managed all aspects of website functions, from front-end and back-end development to troubleshooting, updates, and administration.</li>"
+            "Date":"Feb 2014",
+            "Description":"<li>Developed, designed and implemented a web application using Python and PostgreSQL for the Sales department to check inventory, create orders, manage appointments and keep customer’s order history.</li><li>Developed, designed and implemented a system for the Payroll departments to keep track of staff productivity, commissions and performances. </li><li>I streamlined the process, which saved my group 30 man-hours each month increased customer retention by 25% and increased sales by 40% in first quarter. </li><li>Managed all aspects of website functions, from front-end and back-end development to troubleshooting, updates, and administration.</li>"
         },
         {
             "Employer":"Egnaro Ltd",
@@ -183,12 +189,6 @@ var work = {
         }   
     ]
 }
-
-
-
-
-
-
 
 work.DisplayWork= function()
 {
@@ -211,7 +211,6 @@ work.DisplayWork= function()
     }
 
 }
-
 
 
 bio.Display();
