@@ -9,7 +9,7 @@ var bio={
         "contacts":{ 
                     "contact":"4155132092 ",
                     "email":"adnankhan.developer@gmail.com",
-                    "github":"githubgithub",
+                    "github":"github.com/Adnan-Khaan",
                     "linkedin":"http://lnked.in/3JBT6",
                     "location":"Fremont, CA"
                     },
@@ -29,13 +29,12 @@ var formattedbioPic = HTMLbioPic.replace("%data%",bio.bioPic);
 var formattedwelcomeMsg = HTMLwelcomeMsg.replace("%data%",bio.WelcomeMessage);
 
 
-
-$("#header").append(formattedName);
-$("#header").append(formattedRole);
 $("#topContacts").append(formattedemail);
 $("#topContacts").append(formattedlinkedin);
 $("#topContacts").append(formattedgithub);
 $("#topContacts").append(formattedlocation);
+$("#header").append(formattedName);
+$("#header").append(formattedRole);
 $("#header").append(HTMLskillsStart);
 //$("#header").append(HTMLLanguages);
 
@@ -60,18 +59,26 @@ $("#header").prepend(formattedbioPic);
 
 var Projects = {
     "project":[
-    {
-            "title":"Tournament Results ",
-            "Date":"Aug 2015",
-            "Description":"<li>Designed a database schema using PostgreSQL to store the game matches between players.</li><li>Developed Python module that uses the PostgreSQL database to keep track of players, matches and query the data to determine winners of various matches in a Swiss pairing style tournament.</li>",
-            "Image":"images/tournament.jpg"
+     {
+            "title":"Portfolio",
+            "Date":"September 2015",
+            "Description": "<ul class=\"list\"><li>Designed and developed an interactive portfolio using JavaScript, jQuery, HTML and CSS.</li><li>Integrated a map using Google API.</li></ul>"
     },
     {
-            "title":"Movie Trailer Website",
+            "title":"<a href=\"https://github.com/Adnan-Khaan/Project-2-Tournament\" target=\"_blank\">Tournament Results<\a>",
+            "Date":"August 2015",
+            "Description":"<ul class=\"list\"><li>Designed a database schema using PostgreSQL to store the game matches between players.</li><li>Developed Python module that uses the PostgreSQL database to keep track of players, matches and query the data to determine winners of various matches in a Swiss pairing style tournament.</li></ul>",
+            "Image":"\"#\" onClick=\"window.open('images/tournament.jpg', 'WindowC', 'width=500, height=500,scrollbars=yes');\"><img src=\"images/thumbtournament.jpg\""
+    },
+
+    {
+            "title":"<a href=\"https://github.com/Adnan-Khaan/Udacity-P1--Movie-\" target=\"_blank\">Movie Trailer Website<\a>",
             "Date":"June 2015",
-            "Description":"<li>Single-page, mobile friendly responsive application built with Python, Bootstrap and JavaScript hosted on Github.</li><li>The web page loads 8 movies of editor’s choice with images, description and star rating in a grid layout.</li><li>User can watch the live trailer of those movies in a popup window without leaving the page.</li>",
-                            "Image":"images/movie.jpg"
+            "Description":"<ul class=\"list\"><li>Single-page, mobile friendly responsive application built with Python, Bootstrap and JavaScript hosted on Github.</li><li>The web page loads 8 movies of editor’s choice with images, description and star rating in a grid layout.</li><li>User can watch the live trailer of those movies in a popup window without leaving the page.</li></ul>",
+            "Image":"\"#\" onClick=\"window.open('images/movie.jpg', 'WindowC', 'width=500, height=500,scrollbars=yes');\"><img src=\"images/thumbmovie.jpg\""               
     }
+   
+               
                ]
 
 }
@@ -176,16 +183,16 @@ var work = {
         {
             "Employer":"Egnaro Ltd",
             "Title":"Full Stack Web developer",
-            "location":"London",
+            "location":"London, UK",
             "Date":"Feb 2014",
-            "Description":"<li>Developed, designed and implemented a web application using Python and PostgreSQL for the Sales department to check inventory, create orders, manage appointments and keep customer’s order history.</li><li>Developed, designed and implemented a system for the Payroll departments to keep track of staff productivity, commissions and performances. </li><li>I streamlined the process, which saved my group 30 man-hours each month increased customer retention by 25% and increased sales by 40% in first quarter. </li><li>Managed all aspects of website functions, from front-end and back-end development to troubleshooting, updates, and administration.</li>"
+            "Description":"<ul class=\"list\"><li>Developed, designed and implemented a web application using Python and PostgreSQL for the Sales department to check inventory, create orders, manage appointments and keep customer’s order history.</li><li>Developed, designed and implemented a system for the Payroll departments to keep track of staff productivity, commissions and performances. </li><li>I streamlined the process, which saved my group 30 man-hours each month increased customer retention by 25% and increased sales by 40% in first quarter. </li><li>Managed all aspects of website functions, from front-end and back-end development to troubleshooting, updates, and administration.</li> </ul>"
         },
         {
-            "Employer":"Egnaro Ltd",
-            "Title":"Sales Manager",
-            "location":"London",
+            "Employer":"Phones 4U",
+            "Title":"Web Developer",
+            "location":"Stoke-on-trend, UK",
             "Date":"July 2011",
-            "Description":"<li>Added value to sales through effective analysis of customer requirements.</li><li>Managed the team to meet targets and ensure consistent operational compliance by focusing on effective team coaching & continuous management.</li><li>Increased gross profit by 40% within first month and continued growth of +10% over following 3 months. </li>"  
+            "Description":"<ul class=\"list\"><li>Worked closely with clients, key stakeholders, internal account management teams, creative and development staff and other key user groups to define solutions primarily for Hybris-based ecommerce solutions, but also for mobile contentsolutions and in-store kiosk and tablet interfaces.</li><li>Worked with Lead Developer, on projects using PHP, MySQL, PERL, JavaScript / JQuery, HTML and CSS.</li><li>Responsible for the front and back end development of a variety of internal micro sites and web applications, and the maintenance of existing e-learning material.</li><li>Content collaboration, and creating fun, informative, and engaging e-learning material for the entire 500+ strong retail estate.</li></ul>"  
         }   
     ]
 }

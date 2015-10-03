@@ -127,7 +127,7 @@ a {
   background-color: #4a4a4a;
 }
 
-/* TODO: Replace with image later */
+
 #header {
   background-color: #3b5998;
 }
@@ -201,8 +201,10 @@ span {
 }
 
 #mapDiv {
-  height: 400px;
-  width: 80%;
+  
+  padding-left: 15px;
+  height: 300px;
+  width: 50%;
   padding-bottom: 5%;
 }
 
@@ -212,3 +214,23 @@ span {
     display: block;
   }
 }
+
+
+@media only screen and (min-device-width: 320px)  and (max-device-width: 480px)  and (-webkit-min-device-pixel-ratio: 2) {}
+
+/* Portrait */
+@media only screen  and (min-device-width: 320px)  and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {}
+
+
+
+.list {
+    list-style-type: disc;
+    
+    position: relative;
+    padding-left: 15px;
+    padding: 0;
+}
+
+
+
+
